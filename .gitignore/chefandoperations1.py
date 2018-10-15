@@ -14,10 +14,8 @@ for i in range(t):
             arr1[i+1]=2*(arr2[i]-arr1[i])
             arr1[i+2]=3*(arr2[i]-arr1[i])
             arr1[i]=arr2[i]
-            
-        elif(arr1[i]>arr2[i]):
-            print("NIE")
-            break
         
     if(arr1==arr2):
         print("TAK")
+    else:
+        print("NIE")
