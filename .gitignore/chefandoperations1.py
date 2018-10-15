@@ -6,8 +6,6 @@ for i in range(t):
     
     for i in range(arrlen):
         arr1[i]=int(arr1[i])
-        
-    for i in range(arrlen):
         arr2[i]=int(arr2[i])
         
     for i in range(arrlen-2):
@@ -23,5 +21,3 @@ for i in range(t):
         
     if(arr1==arr2):
         print("TAK")
-    else:
-        print("NIE")
