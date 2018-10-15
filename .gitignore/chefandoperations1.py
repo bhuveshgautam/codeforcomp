@@ -5,18 +5,23 @@ for i in range(t):
     arr2=input().split()
     
     for i in range(arrlen):
-        arr2[i]=int(arr2[i])
-    ctr=0
+        arr1[i]=int(arr1[i])
+        
     for i in range(arrlen):
-        for j in range(i,arrlen):
-            k=1
-            arr1[j]=int(arr1[j])+k
-            k=k+1
-        if(arr1==arr2):
-            ctr=1
+        arr2[i]=int(arr2[i])
+        
+    for i in range(arrlen-2):
+        if(arr1[i]<arr2[i]):
+            
+            arr1[i+1]=2*(arr2[i]-arr1[i])
+            arr1[i+2]=3*(arr2[i]-arr1[i])
+            arr1[i]=arr2[i]
+            
+        elif(arr1[i]>arr2[i]):
+            print("NIE")
             break
         
-    if(ctr==1):
+    if(arr1==arr2):
         print("TAK")
-    if(ctr==0):
+    else:
         print("NIE")
