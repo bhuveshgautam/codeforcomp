@@ -12,7 +12,7 @@ for i in range(t):
         if(arr1[i]<arr2[i]):
             
             arr1[i+1]=arr1[i+1]+2*(arr2[i]-arr1[i])
-            arr1[i+2]=arr1[i+1]+3*(arr2[i]-arr1[i])
+            arr1[i+2]=arr1[i+2]+3*(arr2[i]-arr1[i])
             arr1[i]=arr2[i]
         
     if(arr1==arr2):
