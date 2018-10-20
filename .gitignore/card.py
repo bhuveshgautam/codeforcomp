@@ -9,7 +9,7 @@ for n in range(test):
         cards[x] = int(cards[x])
     i=1
         
-    while(i<=n and ctr<2):
+    while(i<N and ctr<2):
         if(cards[i]<cards[i-1]):
             ctr=ctr+1
         i=i+1
